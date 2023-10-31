@@ -34,13 +34,4 @@ yarn-error.log*
 .env
 /.vscode/extensions.json
 /.vscode/settings.json
-/src/template-time/--categories.html
-/src/template-time/--detail-record.html
-/src/template-time/--history.html
-/src/template-time/--home.html
-/src/template-time/--index.css
-/src/template-time/--login.html
-/src/template-time/--planning.html
-/src/template-time/--profile.html
-/src/template-time/--record.html
-/src/template-time/--register.html
+/src/template-time
