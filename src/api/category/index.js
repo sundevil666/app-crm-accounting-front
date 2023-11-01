@@ -1,19 +1,19 @@
-import axios from 'src/api/index'
+import { axiosInstance } from 'src/api';
 
 const getAll = () => {
-  return axios.get('/categories')
+  return axiosInstance.get('/categories')
 }
 
 const getById = id => {
-  return axios.get(`/categories/${id}`)
+  return axiosInstance.get(`/categories/${id}`)
 }
 
 const create = data => {
-  return axios.post('/categories', data)
+  return axiosInstance.post('/categories', data)
 }
 
 const update = (id, data) => {
-  return axios.patch(`/categories/${id}`, data)
+  return axiosInstance.patch(`/categories/${id}`, data)
 }
 
 export {

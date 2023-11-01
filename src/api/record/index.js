@@ -1,19 +1,19 @@
-import axios from 'src/api/index'
+import { axiosInstance } from 'src/api';
 
 const getAll = (currentPage, limit) => {
-  return axios.get(`/records?page=${currentPage}&limit=${limit}`)
+  return axiosInstance.get(`/records?page=${currentPage}&limit=${limit}`)
 }
 
 const getById = id => {
-  return axios.get(`/records/${id}`)
+  return axiosInstance.get(`/records/${id}`)
 }
 
 const create = data => {
-  return axios.post('/records', data)
+  return axiosInstance.post('/records', data)
 }
 
 const update = (id, data) => {
-  return axios.patch(`/records/${id}`, data)
+  return axiosInstance.patch(`/records/${id}`, data)
 }
 
 export {

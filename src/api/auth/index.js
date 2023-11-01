@@ -1,14 +1,14 @@
-import axios from 'src/api/index'
+import { axiosInstance } from 'src/api';
 
 const signIn = (email, password) => {
-  return axios.post('/login', {
+  return axiosInstance.post('/login', {
     email,
     password
   })
 }
 
 const signUp = data => {
-  return axios.post('/register', data)
+  return axiosInstance.post('/register', data)
 }
 
 export {

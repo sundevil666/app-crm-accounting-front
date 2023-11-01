@@ -94,7 +94,7 @@ const createNewRecord = () => {
     return null
   }
   const data = {
-    category: Number(selectedCategoryById.value),
+    categoryId: Number(selectedCategoryById.value),
     operationType: incomeToOutcome.value,
     summa: Number(summa.value),
     description: description.value

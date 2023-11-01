@@ -20,7 +20,7 @@
           </li>
           <li class="q-mb-md">
             <q-input
-              v-model="name"
+              v-model="username"
               label="Имя"
               hint="Имя"
             />
@@ -62,11 +62,11 @@ const router = useRouter()
 
 const email = ref('')
 const password = ref('')
-const name = ref('')
+const username = ref('')
 const agree = ref(false)
 
 const isValid = computed(() => {
-  return email.value && password.value && agree.value && name.value
+  return email.value && password.value && agree.value && username.value
 })
 
 const register = () => {
@@ -76,12 +76,13 @@ const register = () => {
   const data = {
     email: email.value,
     password: password.value,
-    username: name.value
+    username: username.value
   }
+  console.log(data);
   signUp(data)
     .then(res => {
       setItem('access_token', res.data.access_token)
-      email.value = password.value = name.value = ''
+      email.value = password.value = username.value = ''
       router.push({ name: 'HomePage' })
     })
     .catch(e => {
