@@ -1,6 +1,6 @@
 const mainMenu = [
   {id: 1, name: 'Счет', pathName: 'HomePage', icon: 'business'},
-  {id: 2, name: 'История', pathName: 'HistoryPage', icon: 'history_toggle_off', query: { currentPage: 1, limit: 5 }},
+  {id: 2, name: 'История', pathName: 'HistoryPage', icon: 'history_toggle_off', query: { currentPage: 1, limit: 15 }},
   {id: 3, name: 'Планирование', pathName: 'PlanningPage', icon: 'event_note'},
   {id: 4, name: 'Новая запись', pathName: 'NewRecordPage', icon: 'add_circle'},
   {id: 5, name: 'Категории', pathName: 'CategoriesPage', icon: 'category'},
